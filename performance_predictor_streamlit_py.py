@@ -9,16 +9,6 @@ Original file is located at
 
 import streamlit as st
 import joblib
-
-model = joblib.load('student_performance_predictor.pkl')
-
-st.title("Student Performance Predictor")
-study_hours = st.slider("Study Hours", 0, 10, 2)
-result = model.predict([[study_hours]])
-st.write("Predicted score:", result[0])
-
-import streamlit as st
-import joblib
 import pandas as pd
 
 # Load the pre-trained model
