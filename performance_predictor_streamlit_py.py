@@ -7,10 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1sO1W4scKGn8r5Z8ZPbLGnwuA-xAmROBL
 """
 
-import streamlit as st
-import joblib
-import pandas as pd
-
 # Load the pre-trained model
 # Make sure to replace 'gpa_predictor_model.pkl' with the actual path to your trained model file
 model = joblib.load('student_performance_predictor.pkl')
